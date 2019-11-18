@@ -10,8 +10,20 @@ namespace ArrayLesson
     {
         static void Main(string[] args)
         {
-            int[] arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-            Array array = new Array(arr);
+   
+                Console.Write("Введите элементы ");
+                int[] arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            try { 
+                Array array = new Array(arr);
+                Console.Write("Введите индекс ");
+                int a = int.Parse(Console.ReadLine());
+                Console.WriteLine(array.GetElementByIndex(a));
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                Console.WriteLine("так не робит");
+            }
+            Console.ReadKey();
         }
     }
 }
