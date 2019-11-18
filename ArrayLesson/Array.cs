@@ -29,5 +29,28 @@ namespace ArrayLesson
             return _array[index];
 
         }
+        
+        public int SetElement ()
+        {
+
+        }
+        public int GetElement ()
+        {
+            
+        }
+        public int this[int index]
+        {
+            get
+            {
+                return GetElement(index);
+            }
+            set
+            {
+                SetElement(index, value);
+            }
+        }
+        
+            
+        
     }
 }
