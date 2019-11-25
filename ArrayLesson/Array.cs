@@ -24,33 +24,35 @@ namespace ArrayLesson
         }
         public int GetElementByIndex(int index)
         {
+        
             if (index < 0 || index >= _array.Length)
                 throw new IndexOutOfRangeException();
+
             return _array[index];
 
         }
-        
-        public int SetElement ()
+      
+        public int multplay()
         {
-
-        }
-        public int GetElement ()
-        {
-            
+            int p = 1;
+            foreach (int element in _array) ;
+            p = p * element;
+            return p;
         }
         public int this[int index]
         {
-            get
-            {
-                return GetElement(index);
-            }
             set
             {
-                SetElement(index, value);
+                _array[index] = value;
+            }
+
+            get
+            {
+                return _array[index];
             }
         }
-        
-            
-        
     }
+
+
 }
+

@@ -23,6 +23,7 @@ namespace ArrayLesson
             {
                 Console.WriteLine("так не робит");
             }
+        
             Console.ReadKey();
         }
     }
