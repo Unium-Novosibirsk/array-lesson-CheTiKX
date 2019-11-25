@@ -33,9 +33,14 @@ namespace ArrayLesson
         }
         public int SetIndex(int index)
         {
-            Console.WriteLine("Введите замену");
-            int a = int.Parse(Console.ReadLine());
-            return a;
+            if (index < 0 || index >= _array.Length)
+                throw new IndexOutOfRangeException();
+            else
+            {
+                Console.WriteLine("Введите замену");
+                int a = int.Parse(Console.ReadLine());
+                return a;
+            }
         }
       
         public int multiplay()

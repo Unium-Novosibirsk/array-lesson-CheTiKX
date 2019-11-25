@@ -23,12 +23,19 @@ namespace ArrayLesson
             {
                 Console.WriteLine("так не робит");
             }
-            Array ar = new Array(arr);
-            Console.WriteLine("Введите индекс");
-            int b = int.Parse(Console.ReadLine());
-            Console.WriteLine(ar.SetIndex(b));
-            
-           
+            try
+            {
+                Array ar = new Array(arr);
+                Console.WriteLine("Введите индекс");
+                int b = int.Parse(Console.ReadLine());
+                Console.WriteLine(ar.SetIndex(b));
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                Console.WriteLine("так не робит");
+            }
+
+
             Console.ReadKey();
         }
     }
