@@ -31,12 +31,18 @@ namespace ArrayLesson
             return _array[index];
 
         }
+        public int SetIndex(int index)
+        {
+            Console.WriteLine("Введите замену");
+            int a = int.Parse(Console.ReadLine());
+            return a;
+        }
       
-        public int multplay()
+        public int multiplay()
         {
             int p = 1;
             foreach (int element in _array) ;
-            p = p * element;
+            p=p*;
             return p;
         }
         public int this[int index]
