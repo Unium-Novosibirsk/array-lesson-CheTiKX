@@ -23,6 +23,8 @@ namespace ArrayLesson
             {
                 Console.WriteLine("так не робит");
             }
+
+            //не могу вызвать метод
             try
             {
                 Array ar = new Array(arr);
@@ -34,8 +36,7 @@ namespace ArrayLesson
             {
                 Console.WriteLine("так не робит");
             }
-
-
+            // не знаю как вызвать indexator
             Console.ReadKey();
         }
     }

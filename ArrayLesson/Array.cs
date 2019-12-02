@@ -47,7 +47,7 @@ namespace ArrayLesson
         {
             int p = 1;
             foreach (int element in _array) ;
-            p=p*;
+            p=p*p;
             return p;
         }
         public int this[int index]
@@ -60,6 +60,18 @@ namespace ArrayLesson
             get
             {
                 return _array[index];
+            }
+
+        }
+        public int delete(int index)
+        {
+            if (index < 0 || index >= _array.Length)
+                throw new IndexOutOfRangeException();
+            else
+            {
+                Console.WriteLine("Введите индекс");
+                int a = int.Parse(Console.ReadLine());
+                return 0;
             }
         }
     }
